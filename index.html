@@ -11,8 +11,12 @@
         <title>Geetraj Corporations | Glassware, Scientific instruments, Commercial chemicals & General supplier</title>
         <style>
             body{
-                background: purple;
-                /* background-image: url("./img/rabbit.jpg" );
+              background-image:url("img/rabbit.svg"),url("img/Purple.svg"),url("img/Orange.svg"),url("img/Footer.svg");
+              background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
+              background-size:auto,1600px 800px,1600px 800px,1600px 800px;
+              background-position: 105px 680px,-32px -32px, -40px 200px,-40px 647px;
+              
+                /* background-image: url("./img/rabbit.svg" );
                 background-repeat: no-repeat;
                 background-position: 105px 775px;
                   */
@@ -20,7 +24,6 @@
              
             header{
                 height: 130px;
-
             }
             /* .a_tbdr{
                 border:1px dashed black;
@@ -29,10 +32,10 @@
                 min-height: 900px;
                 /* border:1px dashed black; */
             }
-            footer{
+            /* footer{
                 min-height: 316px;
                  
-            }
+            } */
             .g_header_nav > li > a{
                 padding: 60px 32px 20px 32px;
                 border-bottom-left-radius: 10px;
@@ -63,22 +66,25 @@
               background-color: #35556C;
              }
              .panel:hover{
-              min-height: 400px;
+              min-height: 425px;
+              opacity: 1;
+              visibility: visible;
               background-color: skyblue;
-              cursor: 
-              pointer;
+              cursor:pointer;
+              /* display: block !important; */
              }
              .panel:hover >div{
               display: block !important;
-              /* opacity: 1;
-              visibility: visible; */
+               opacity: 1;
+              visibility: visible;
+               
              }
              .a_panel_a1{
-              min-height: 250px;
-              background-color: blueviolet;
-              opacity: 0;
-              visibility: visible;
               transition: all .2s linear;
+              height: 250px;
+              background-color: blueviolet;              
+              opacity: 0;
+              visibility: hidden;
              }
             </style>
         </head>
@@ -87,7 +93,7 @@
         <div class="container a_cont p-0">
             <header>
              <a href="#" class="float-start mt-5">
-                <img src="./img/logo.png" height="60">
+                <img src="./img/Logo3.png" height="60">
              </a>
                 <ul class="nav float-end g_header_nav">
                     <li class="nav-item">
@@ -116,33 +122,33 @@
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
               <div class="row m-0">
                 <div class="col-12 col-sm-3 mb-3">
-                  <div class="panel panle1 rounded-4 p-3">
-                    <img src="./img/facebook.png">
+                  <div class="panel panle1 rounded rounded-4 p-3">
+                    <img src="./img/launch.svg">
                     <h3 class="mb-5">Decision 1</h3>
+                    <div class="a_panel_a1 d-none mb-1">A</div>
+                    <a href="#" class="float-end text-white">Learn More<i class="fa-solid fa-chevron-right ms-1 "></i></a>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-3 mb-3">
+                  <div class="panel panle1 rounded-4 p-3">
+                    <img src="./img/launch.svg">
+                    <h3 class="mb-5">Decision 2</h3>
                     <div class="a_panel_a1 d-none">A</div>
                     <a href="#" class="float-end text-white text-decoration-none">Learn More<i class="fa-solid fa-chevron-right ms-1 "></i></a>
                   </div>
                 </div>
-                <div class="col-12  col-sm-3 mb-3">
+                <div class="col-12 col-sm-3 mb-3">
                   <div class="panel panle1 rounded-4 p-3">
-                    <img src="./img/facebook.png">
-                    <h3 class="mb-5">Decision 1</h3>
+                    <img src="./img/launch.svg">
+                    <h3 class="mb-5">Decision 3</h3>
                     <div class="a_panel_a1 d-none">A</div>
                     <a href="#" class="float-end text-white text-decoration-none">Learn More<i class="fa-solid fa-chevron-right ms-1 "></i></a>
                   </div>
                 </div>
-                <div class="col-12  col-sm-3 mb-3">
+                <div class="col-12 col-sm-3 mb-3">
                   <div class="panel panle1 rounded-4 p-3">
-                    <img src="./img/facebook.png">
-                    <h3 class="mb-5">Decision 1</h3>
-                    <div class="a_panel_a1 d-none">A</div>
-                    <a href="#" class="float-end text-white text-decoration-none">Learn More<i class="fa-solid fa-chevron-right ms-1 "></i></a>
-                  </div>
-                </div>
-                <div class="col-12  col-sm-3 mb-3">
-                  <div class="panel panle1 rounded-4 p-3">
-                    <img src="./img/facebook.png">
-                    <h3 class="mb-5">Decision 1</h3>
+                    <img src="./img/launch.svg">
+                    <h3 class="mb-5">Decision 4</h3>
                     <div class="a_panel_a1 d-none">A</div>
                     <a href="#" class="float-end text-white text-decoration-none">Learn More<i class="fa-solid fa-chevron-right ms-1 "></i></a>
                   </div>
@@ -150,7 +156,7 @@
               </div>
             </div>
 
-            <footer class="bg-white">
+            <footer>
                <div class="row m-0 mb-4">
                 <div class="col-5 mycolor">
                         <h4>FEATURES</h4>
@@ -181,7 +187,7 @@
 
                <div class="row m-0">
                 <div class="col-5">
-                  <img src="img/logo.png" height="30">
+                  <img src="img/logo_Footer.png" height="30">
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                   </p>
